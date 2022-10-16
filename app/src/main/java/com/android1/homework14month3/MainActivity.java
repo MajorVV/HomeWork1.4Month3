@@ -14,11 +14,6 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     private RecyclerView rv_contacts;
-    private ArrayList<String> contactsList = new ArrayList<>();
-    ListView listView;
-    String mTitle[] = {"First", "Second", "Third","Four", "Fife"};
-    String mDescription[] = {"First Description","Second Description","Third Description","Four Description","Fife Description",};
-    int Image[] = {R.drawable.first,R.drawable.second,R.drawable.third,R.drawable.four,R.drawable.fife,};
 
 
     @Override
@@ -26,18 +21,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         rv_contacts = findViewById(R.id.recycler_view);
-        contactsList.add("Тима");
-        contactsList.add("Акжол");
-        contactsList.add("Баха");
-        contactsList.add("Эш");
-        contactsList.add("Мека");
-        contactsList.add("Мики");
-        contactsList.add("Жейк");
-        contactsList.add("Марс");
-        contactsList.add("Сен");
-        contactsList.add("Кожа");
-        contactsList.add("Мелис");
-        contactsList.add("Тима");
+        ArrayList<Contact> contactsList = new ArrayList<>();
+        contactsList.add(new Contact("Тима","0777889909",R.drawable.man));
+        contactsList.add(new Contact("Айша","0997874432",R.drawable.woman2));
+        contactsList.add(new Contact("Айлиш","0500043933",R.drawable.woman));
+        contactsList.add(new Contact("Арс","0222993254",R.drawable.dad));
+        contactsList.add(new Contact("Жека","0555776747",R.drawable.man2));
+        contactsList.add(new Contact("Эля","0555555555",R.drawable.woman));
+        contactsList.add(new Contact("Марс","0707889000",R.drawable.man));
+        contactsList.add(new Contact("Гуля","0404033999",R.drawable.woman2));
+        contactsList.add(new Contact("Бейк","0998264792",R.drawable.man2));
+        contactsList.add(new Contact("Аллен ага","0558372727",R.drawable.dad));
+
 
 
 
